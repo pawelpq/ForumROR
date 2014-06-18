@@ -11,3 +11,32 @@
  *= require_self
  *= require_tree .
  */
+#container{
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+#belt_header{
+    background-color: #778899;
+ /*   width: 200px; */
+     height: 100px;
+    width: 100%;
+    z-index: 3;
+    top: 10px;
+    position: absolute;
+    direction:rtl;
+}
+#avatar_div{
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    z-index: 4;
+}
+#belt_vertical{
+    left:10px;
+    background-color: #a9a9a9;
+    position:absolute;
+    height: 700px;
+    width: 150px;
+z-index:-10;
+}
