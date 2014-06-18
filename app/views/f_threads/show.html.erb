@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @f_thread.subject %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @f_thread.date %>
+</p>
+
+<p>
+  <strong>Sub category:</strong>
+  <%= @f_thread.sub_category %>
+</p>
+
+<%= link_to 'Edit', edit_f_thread_path(@f_thread) %> |
+<%= link_to 'Back', f_threads_path %>

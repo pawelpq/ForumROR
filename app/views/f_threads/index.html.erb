@@ -1,0 +1,31 @@
+<h1>Listing f_threads</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Date</th>
+      <th>Sub category</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @f_threads.each do |f_thread| %>
+      <tr>
+        <td><%= f_thread.subject %></td>
+        <td><%= f_thread.date %></td>
+        <td><%= f_thread.sub_category.name %></td>
+        <td><%= link_to 'Show', f_thread %></td>
+        <td><%= link_to 'Edit', edit_f_thread_path(f_thread) %></td>
+        <td><%= link_to 'Destroy', f_thread, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New F thread', new_f_thread_path %>
