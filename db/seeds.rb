@@ -5,4 +5,4 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Category.create(name:'Category 1', desc:'opis')
+User.create(login:'pawel',password_digest: 'pawel',getMail: true,isAdmin: false, email: 'pawel@wp.pl')

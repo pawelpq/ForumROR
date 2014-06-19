@@ -1,4 +1,5 @@
 ForumROR::Application.routes.draw do
+  get "home/index"
   resources :users
 
   resources :f_threads
@@ -7,6 +8,20 @@ ForumROR::Application.routes.draw do
 
   resources :categories
 
+  get "sign_in" => "authentication#sign_in"
+  post "sign_in" => "authentication#login"
+  
+  get "signed_out" => "authentication#signed_out"
+  
+  
+  get "change_password" => "authentication#change_password"
+  get "forgot_password" => "authentication#forgot_password"
+  
+  
+ get "new_user" => "authentication#new_user"
+ get "auto_login" => "authentication#auto_login"
+  
+  get "password_sent" => "authentication#password_sent"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
